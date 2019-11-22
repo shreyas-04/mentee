@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+///////////////////////////  Variables /////////////////////////@at-root
+@import "./variables";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $background-gray;
+    a {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.flex-spacer {
+    flex: 1 1 auto;
+}
+
+.btn {
+    &,
+    &:hover,
+    &:active {
+        text-decoration: none;
+        border: none;
+        padding: .8rem 1.3rem;
+        font-size: 1rem;
+        color: white;
+        border-radius: 7px;
+        backface-visibility: hidden;
+        overflow: hidden;
+        cursor: pointer;
+        outline: 0;
+    }
+    &-green {
+        background-color: $color-green;
+    }
+    &-white {
+        background-color: $content-gray;
+        color: $color-gray-dark;
+    }
+}

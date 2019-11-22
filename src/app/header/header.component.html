@@ -1,0 +1,49 @@
+<mat-toolbar color="primary">
+    <a mat-button (click)="sidenav.toggle()"><img src="../../assets/icons/navigation/ic_menu_white_36dp.png" height=40 width=40></a>
+    <span class="logo"><img src="../../assets/Logo-01.png"></span>
+    <span class="flex-spacer"></span>
+    <a mat-button routerLink="/favorites" routerLinkActive="active"> <img src="../../assets/icons/action/ic_add_shopping_cart_white_24dp.png" alt=""> Add Product</a>
+    <a mat-button routerLink="/contactus" routerLinkActive="active"><img src="../../assets/icons/social/ic_notifications_none_white_24dp.png"> Notifications</a>
+    <a mat-button (click)="openLoginForm()"> <img src="../../assets/icons/action/ic_account_circle_white_24dp.png"> Aman Sharma</a>
+</mat-toolbar>
+
+
+<mat-sidenav-container [hasBackdrop]="false">
+    <mat-sidenav #sidenav mode="push" opened>
+        <div class="sidenav-item">
+            <a routerLink="/contactus" routerLinkActive="active"><img src="../../assets/nav/ic_account_box_white_24dp.png"> </a>
+
+        </div>
+        <div class="sidenav-item">
+            <a routerLink="/contactus" routerLinkActive="active"><img src="../../assets/nav/ic_group_add_white_24dp.png"> </a>
+
+        </div>
+
+        <div class="sidenav-item">
+            <a routerLink="/contactus" routerLinkActive="active"><img src="../../assets/nav/ic_event_note_white_24dp.png"> </a>
+
+        </div>
+        <div class="sidenav-item">
+            <a routerLink="/contactus" routerLinkActive="active"><img src="../../assets/nav/ic_notifications_none_white_24dp.png"> </a>
+
+        </div>
+        <div class="sidenav-item">
+            <a routerLink="/contactus" routerLinkActive="active"><img src="../../assets/nav/ic_insert_chart_white_24dp.png"> </a>
+        </div>
+
+        <div class="sidenav-item">
+            <a routerLink="/contactus" routerLinkActive="active"><img src="../../assets/nav/ic_group_add_white_24dp.png"> </a>
+        </div>
+
+        <div class="sidenav-item">
+            <a routerLink="/contactus" routerLinkActive="active"><img src="../../assets/nav/ic_settings_white_24dp.png"> </a>
+        </div>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <app-institute-info></app-institute-info>
+    </mat-sidenav-content>
+
+
+</mat-sidenav-container>

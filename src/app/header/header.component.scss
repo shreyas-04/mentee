@@ -1,0 +1,49 @@
+@import "../../variables";
+mat-toolbar {
+    background-color: $color-green !important;
+    margin: 0;
+    height: $header-height;
+    padding-left: 0;
+}
+
+.logo {
+    height: 3.5rem;
+    background-color: white;
+    margin-left: 1.8vw;
+    width: 3.5rem;
+    border-radius: 35px;
+    text-align: center;
+    img {
+        height: 3.2rem;
+    }
+}
+
+mat-sidenav-container {
+    height: 90vh;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    mat-sidenav {
+        width: 4.5rem;
+        background-color: $color-gray-dark;
+        padding: 1rem 0;
+        .sidenav-item {
+            width: 4.5rem;
+            height: 2.7rem;
+            padding-top: 5px;
+            margin: 10px 0;
+            text-align: center;
+            &:hover {
+                background-color: $color-gray;
+                color: white;
+            }
+            a {
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+mat-sidenav-content {
+    padding: $default-margin;
+}
