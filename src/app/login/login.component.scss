@@ -1,0 +1,78 @@
+@import "../../scss/variables";
+.login {
+    height: 100vh;
+    .login-left {
+        position: relative;
+        background-color: $color-green;
+        .logo {
+            position: absolute;
+            top: 3.5%;
+            left: 3.5%;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 4rem;
+            background-color: white;
+            img {
+                height: 4rem;
+                position: absolute;
+                width: 4rem;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .login-img {
+            img {
+                height: 50%;
+                width: 90%;
+                position: absolute;
+                transform: translateX(-3%);
+            }
+        }
+        .description {
+            width: 80%;
+            color: white;
+            position: absolute;
+            left: 50%;
+            top: 65%;
+            transform: translate(-50%, -65%);
+        }
+    }
+    .login-right {
+        position: relative;
+        color: $color-green;
+        padding: 2rem;
+        .btn {
+            padding: .9rem 2.1rem;
+        }
+        h1,
+        h3 {
+            margin-top: 0;
+        }
+        .login-box {
+            position: absolute;
+            padding: 2rem;
+            width: 70%;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+        }
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .login-left {
+        display: none;
+    }
+}
+
+a {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-green;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}

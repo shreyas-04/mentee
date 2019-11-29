@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $color-white;
+    a {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}

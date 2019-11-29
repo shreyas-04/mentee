@@ -19,11 +19,21 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatRadioModule } from '@angular/material/radio';
 
 import 'hammerjs';
 import { InstituteInfoComponent } from './institute/institute-info/institute-info.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { SuccessComponent } from './signup/success/success.component';
+import { MenteeComponent } from './mentee/mentee.component';
+import { Lp1Component } from './mentee/lp1/lp1.component';
+import { ChangePasswordComponent } from './common/change-password/change-password.component';
+import { ForgotPasswordComponent } from './common/forgot-password/forgot-password.component';
+import { InstituteSignupComponent } from './signup/institute-signup/institute-signup.component';
+import { MAT_LABEL_GLOBAL_OPTIONS } from '@angular/material/core';
+
 
 
 @NgModule({
@@ -32,6 +42,13 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     InstituteInfoComponent,
     LoginComponent,
+    SignupComponent,
+    SuccessComponent,
+    MenteeComponent,
+    Lp1Component,
+    ChangePasswordComponent,
+    ForgotPasswordComponent,
+    InstituteSignupComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,9 +69,11 @@ import { LoginComponent } from './login/login.component';
     MatSliderModule,
     MatFormFieldModule,
     MatSidenavModule,
-    FormsModule
+    FormsModule,
+    MatRadioModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent ]
 })
 export class AppModule { }

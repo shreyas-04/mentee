@@ -1,0 +1,41 @@
+<div class="container lp1" fxLayout="column" fxLayoutAlign="top center" *ngIf="x===1">
+    <div class="headings" fxFlex="23">
+        <h1 class="heading-primary u-margin-bottom-xxsmall">Choose Class (Mandatory)</h1>
+        <h3 class="heading-secondary">This information is to open mentee account</h3>
+    </div>
+
+    <div class="lp1-box" fxFlex="60" fxLayout="column" fxLayoutAlign="space-evenly center">
+
+
+        <mat-select placeholder="Mentee"></mat-select>
+
+
+        <mat-select [(ngModel)]="class" placeholder="Choose Class">
+            <mat-option [value]="11">XI</mat-option>
+            <mat-option [value]="12">XII</mat-option>
+        </mat-select>
+        <button class="btn btn-green btn-lg" fxFlex="15" type="button" (click)="x=2">Submit</button>
+    </div>
+</div>
+
+<div class="container lp1" fxLayout="column" fxLayoutAlign="top center" *ngIf="x===2">
+    <div class="headings" fxFlex="23">
+        <h1 class="heading-primary u-margin-bottom-xxsmall">Choose Account</h1>
+        <h3 class="heading-secondary">Access information related to the chosen account</h3>
+    </div>
+
+
+    <mat-list fxFlex="60" fxLayout="column" fxLayoutAlign="center center">
+        <br>
+        <mat-list-item class="u-margin-bottom-medium" fxFlex="40">
+            <mat-radio-button value="0"></mat-radio-button>
+            <button class="btn btn-dark btn-gt" (click)="mentee.value=0">Mentee Account</button>
+        </mat-list-item>
+
+        <mat-list-item fxFlex="40">
+            <mat-radio-button value="1"></mat-radio-button>
+            <button class="btn btn-white btn-gt">Clarance Coaching Classes</button>
+        </mat-list-item>
+    </mat-list>
+
+</div>

@@ -1,0 +1,41 @@
+@import "../../../scss/variables";
+.lp1 {
+    height: 86vh;
+    background-color: white;
+    text-align: center;
+    .headings {
+        margin: 0 auto;
+        h3 {
+            margin: 0;
+        }
+    }
+    &-box {
+        border: 1.5px solid $background-gray;
+        margin: 0 auto;
+        padding: 2.4% 28% 1.5% 28%;
+        border-radius: $border-radius;
+    }
+}
+
+mat-list {
+    overflow: auto;
+    // height: inherit;
+    padding: 2rem 16%;
+    // background-color: yellow;
+    width: 70%;
+    border: 2px solid $background-gray;
+    border-radius: $border-radius;
+}
+
+.btn-gt {
+    margin: 1rem;
+    width: 23rem;
+    height: 7rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-white {
+    background-color: $background-gray;
+    color: $color-green;
+}

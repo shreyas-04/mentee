@@ -9,7 +9,7 @@
 
 
 <mat-sidenav-container [hasBackdrop]="false">
-    <mat-sidenav #sidenav mode="push" opened>
+    <mat-sidenav #sidenav mode="push">
         <div class="sidenav-item">
             <a routerLink="/contactus" routerLinkActive="active"><img src="../../assets/nav/ic_account_box_white_24dp.png"> </a>
 
@@ -42,7 +42,9 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <app-institute-info></app-institute-info>
+        <!-- <app-institute-info></app-institute-info> -->
+        <!-- <app-lp1></app-lp1> -->
+        <app-change-password></app-change-password>
     </mat-sidenav-content>
 
 

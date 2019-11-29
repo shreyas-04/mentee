@@ -1,1 +1,44 @@
-<p>login works!</p>
+<div class="container login" fxLayout="row" fxLayout.lt-md="column">
+    <div class=" login-left" fxFlex="63" fxFlex.lt-sm="0">
+        <div class="logo">
+            <img src="../../assets/Logo-01.png" class="img-responsive" alt="">
+        </div>
+        <div class="login-img">
+            <img src="../../assets/Login-Page.png" alt="">
+        </div>
+        <div class="description">
+            <h1>Lorem, ipsum dolor sit amet, consectetur adipisicing elit, Pariatur explicabo ipsa.</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, autem. Rem, quos. Dolor, doloremque nihil? Debitis, nobis aut ab id inventore nostrum minus, itaque dicta adipisci excepturi a dolorem laudantium.</p>
+        </div>
+
+    </div>
+    <div class="login-right" fxFlex="37" fxFlex.lt-lg="100">
+        <div class="login-box">
+            <h1 class="heading-primary u-margin-bottom-xxsmall">Welcome!</h1>
+            <h3 class="heading-secondary">Login to access Mentee</h3>
+            <div class="loginType u-margin-bottom-small" fxLayout="row" fxLayoutAlign="space-evenly start">
+                <button class="btn btn-green" (click)="type='user'">User</button>
+                <button class="btn btn-gray" (click)="type='institute'">Institute</button>
+            </div>
+            <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+
+                <div class="input u-margin-bottom-small" fxLayout="column">
+                    <mat-form-field>
+                        <input matInput type="text" name="username" placeholder="Email/Mobile" ngModel required>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="password" name="password" placeholder="Password" ngModel required>
+                    </mat-form-field>
+                </div>
+
+                <div class="login-bottom" fxLayout="row" fxLayoutAlign="space-between start">
+                    <div class="links" fxLayout="column">
+                        <a href="#">forgot password?</a>
+                        <a href="#">new here? Sign Up</a>
+                    </div>
+                    <button class="btn btn-green" type="submit" [disabled]="!f.valid">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
